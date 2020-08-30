@@ -1,0 +1,21 @@
+.node {
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+}
+
+.end {
+  background-color: blue;
+}
+
+.start {
+  background-color: green;
+}
+
+.obstacle {
+  background-color: red !important;
+}
+
+.active {
+  background-color: yellow !important;
+}

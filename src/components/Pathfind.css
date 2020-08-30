@@ -1,0 +1,14 @@
+.wrapper {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+
+}
