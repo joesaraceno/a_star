@@ -2,14 +2,18 @@ import React from 'react'
 
 import "./Node.css";
 
-function Node({isEnd, isStart, isActive, isObstacle}) {
+function Node({isEnd, isStart, row, col, isActive, isObstacle, neighbors}) {
+  function printNeighbors() {
+    console.log(neighbors);
+  }
   return (
-    <div className={
-      `node ${isStart ? 'start' : ''} ${isEnd ? 'end' : ''} ${isActive ? 'active' : ''} ${isObstacle ? 'obstacle' : ''}
-    `}
+    <div
+      onClick={printNeighbors}
+      className={`node${isStart ? ' start' : ''}${isEnd ? ' end' : ''}${isActive ? ' active' : ''}${isObstacle ? ' obstacle' : ''}`}
+      id={`node-${row}-${col}`}
     >
-      
-    </div>
+      {row},{col}
+      </div>
   )
 }
 
